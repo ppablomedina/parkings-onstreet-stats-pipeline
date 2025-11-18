@@ -20,6 +20,8 @@ date      = prev.strftime("%Y%m")
 full_date = prev.strftime("%Y%m%d")
 w_month   = prev.month_name(locale='es_ES.UTF-8')
 
+path_inventario   = f'{PATH_DATALAKE_DOCS}/{year}/ser.inventario-plazas'      + f'/{date}.xlsx'
 path_parquimetros = f'{PATH_DATALAKE_DOCS}/{year}/flowbird.parquimetros'      + f'/{full_date}.csv'
 path_elavon       = f'{PATH_DATALAKE_DOCS}/{year}/flowbird.pagos-con-tarjeta' + f'/{date}.elavon.csv'
-path_la-caixa     = f'{PATH_DATALAKE_DOCS}/{year}/flowbird.pagos-con-tarjeta' + f'/{date}.la-caixa.csv'
+path_caixa        = f'{PATH_DATALAKE_DOCS}/{year}/flowbird.pagos-con-tarjeta' + f'/{date}.caixa.csv'
+ 
